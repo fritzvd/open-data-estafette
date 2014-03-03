@@ -1,9 +1,9 @@
 <!DOCTYPE HTML>
 <html lang="en">
   <head>
-    <title>API</title>
-    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-    <meta name="author" content="Hakim El Hattab">
+    <title>Open Data Estafette</title>
+    <meta name="description" content="Presentation on open data for the 'Open Data Estafette 2014'">
+    <meta name="author" content="Fritz van Deventer">
 
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -33,113 +33,140 @@
         <h4>Open Data Estafette</h4>
         </section>
         <section>
-        <h2>semantiek</h2>
-          <ul>
-            <li><strong>openbaar</strong></li>
-            <li><strong>geen auteursrecht of andere rechten</strong></li>
-            <li><strong>bekostigd uit publieke middelen</strong></li>
-            <li><strong>open standaarden</strong></li>
-            <li><strong>computer-leesbaar</strong></li>
-          </ul>
-        </section>
-        <section>
-          <h2>human-readable</h2>
-          <h5>instagram</h5>
-          <img src="assets/img/instagram.jpg" />
-        </section>
-        <section>
-            <h2>machine-readable</h2>
+          <section>
+          <h2>semantiek</h2>
+            <ul>
+              <li>openbaar</li>
+              <li>geen auteursrecht of andere rechten</li>
+              <li>bekostigd uit publieke middelen</li>
+              <li>open standaarden</li>
+              <li><strong>computer-leesbaar</strong></li>
+            </ul>
+          </section>
+          <section>
+            <h2>human-readable</h2>
             <h5>instagram</h5>
-            <pre><code class="js">
-{
-pagination: {
-next_max_tag_id: "1393124563063",
-deprecation_warning: "next_max_id and min_id are deprecated for this endpoint; use min_tag_id and max_tag_id instead",
-next_max_id: "1393124563063",
-next_min_id: "1393124563063",
-min_tag_id: "1393124563063",
-next_url: "https://api.instagram.com/v1/tags/opendata/media/recent?count=1&max_id=1393127075131&client_id=e8020c94851e4938ae02ca397c441fd4&max_tag_id=1393124563063"
-},
-meta: {
-code: 200
-},
-data: [
-{
-attribution: null,
-tags: [
-"opendata"
-],
-location: {
-latitude: 25.80093,
-longitude: -80.202325
-},
-comments: {
-count: 0,
-data: [ ]
-},
-filter: "X-Pro II",
-created_time: "1393095752",
-link: "http://instagram.com/p/kurhIOJ6xn/",
-likes: {
-count: 2,
-data: [
-{
-username: "a_la_carla",
-profile_picture: "http://images.ak.instagram.com/profiles/profile_4114544_75sq_1365620039.jpg",
-id: "4114544",
-full_name: "Skinny Fat Girl"
-},
-{
-username: "anachammas",
-profile_picture: "http://images.ak.instagram.com/profiles/profile_38826486_75sq_1338036282.jpg",
-id: "38826486",
-full_name: "anachammas"
-}
-]
-},
-images: {
-low_resolution: {
-url: "http://distilleryimage9.s3.amazonaws.com/e0eeeb5c9bf311e3b7ad0ab2f26a2e49_6.jpg",
-width: 306,
-height: 306
-},
-thumbnail: {
-url: "http://distilleryimage9.s3.amazonaws.com/e0eeeb5c9bf311e3b7ad0ab2f26a2e49_5.jpg",
-width: 150,
-height: 150
-},
-standard_resolution: {
-url: "http://distilleryimage9.s3.amazonaws.com/e0eeeb5c9bf311e3b7ad0ab2f26a2e49_8.jpg",
-width: 640,
-height: 640
-}
-},
-users_in_photo: [ ],
-caption: {
-created_time: "1393095762",
-text: "#opendata",
-from: {
-username: "sarasti",
-profile_picture: "http://images.ak.instagram.com/profiles/anonymousUser.jpg",
-id: "1237538",
-full_name: "sarasti"
-},
-id: "661657672934207425"
-},
-type: "image",
-id: "661657587840167015_1237538",
-user: {
-username: "sarasti",
-website: "",
-profile_picture: "http://images.ak.instagram.com/profiles/anonymousUser.jpg",
-full_name: "sarasti",
-bio: "",
-id: "1237538"
-}
-}
-]
-}
-            </code></pre>
+            <img src="assets/img/instagram.jpg" />
+          </section>
+          <section>
+              <h2>machine-readable</h2>
+              <h5>instagram - API</h5>
+              <pre><code class="js">
+  {
+  pagination: {
+  next_max_tag_id: "1393124563063",
+  deprecation_warning: "next_max_id and min_id are deprecated for this endpoint; use min_tag_id and max_tag_id instead",
+  next_max_id: "1393124563063",
+  next_min_id: "1393124563063",
+  min_tag_id: "1393124563063",
+  next_url: "https://api.instagram.com/v1/tags/opendata/media/recent?count=1&max_id=1393127075131&client_id=e8020c94851e4938ae02ca397c441fd4&max_tag_id=1393124563063"
+  },
+  meta: {
+  code: 200
+  },
+  data: [
+  {
+  attribution: null,
+  tags: [
+  "opendata"
+  ],
+  location: {
+  latitude: 25.80093,
+  longitude: -80.202325
+  },
+  comments: {
+  count: 0,
+  data: [ ]
+  },
+  filter: "X-Pro II",
+  created_time: "1393095752",
+  link: "http://instagram.com/p/kurhIOJ6xn/",
+  likes: {
+  count: 2,
+  data: [
+  {
+  username: "a_la_carla",
+  profile_picture: "http://images.ak.instagram.com/profiles/profile_4114544_75sq_1365620039.jpg",
+  id: "4114544",
+  full_name: "Skinny Fat Girl"
+  },
+  {
+  username: "anachammas",
+  profile_picture: "http://images.ak.instagram.com/profiles/profile_38826486_75sq_1338036282.jpg",
+  id: "38826486",
+  full_name: "anachammas"
+  }
+  ]
+  },
+  images: {
+  low_resolution: {
+  url: "http://distilleryimage9.s3.amazonaws.com/e0eeeb5c9bf311e3b7ad0ab2f26a2e49_6.jpg",
+  width: 306,
+  height: 306
+  },
+  thumbnail: {
+  url: "http://distilleryimage9.s3.amazonaws.com/e0eeeb5c9bf311e3b7ad0ab2f26a2e49_5.jpg",
+  width: 150,
+  height: 150
+  },
+  standard_resolution: {
+  url: "http://distilleryimage9.s3.amazonaws.com/e0eeeb5c9bf311e3b7ad0ab2f26a2e49_8.jpg",
+  width: 640,
+  height: 640
+  }
+  },
+  users_in_photo: [ ],
+  caption: {
+  created_time: "1393095762",
+  text: "#opendata",
+  from: {
+  username: "sarasti",
+  profile_picture: "http://images.ak.instagram.com/profiles/anonymousUser.jpg",
+  id: "1237538",
+  full_name: "sarasti"
+  },
+  id: "661657672934207425"
+  },
+  type: "image",
+  id: "661657587840167015_1237538",
+  user: {
+  username: "sarasti",
+  website: "",
+  profile_picture: "http://images.ak.instagram.com/profiles/anonymousUser.jpg",
+  full_name: "sarasti",
+  bio: "",
+  id: "1237538"
+  }
+  }
+  ]
+  }
+              </code></pre>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h3>Viewers op open data</h3>
+          </section>
+          <section>
+            <img src="assets/img/ahnviewer.png" />
+          </section>
+          <section>
+            <img src="assets/img/waagviewer.png" />
+          </section>
+          <section>
+            <img src="assets/img/regenviewer.gif" />
+          </section>
+        </section>
+        <section>
+          <section>
+            <img src="assets/img/DIK.png" />
+          </section>
+          <section>
+            <img src="assets/img/DIK1.png" />
+          </section>
+          <section>
+            <img src="assets/img/DIK2.png" />
+          </section>
         </section>
         <section>
           <p>We geven iedereen open data. Hoezee.</p>
